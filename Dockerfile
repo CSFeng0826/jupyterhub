@@ -9,6 +9,9 @@ RUN pip install --upgrade pip
 # Install dockerspawner, oauthenticator and psycopg2
 RUN apt-get update \
     && apt-get -y install libpq-dev \
+    build-essential \
+    python-dev \
+    python3-dev \
     && pip install docker-py==1.9.0 \
     dockerspawner \
     oauthenticator \
